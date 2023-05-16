@@ -1,0 +1,265 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+
+.header {
+
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(20, 20, 20, 0.5), rgba(11, 107, 136, 0.5)), url(../img/image.png);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+
+}
+
+nav {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    transition: background 1s;
+
+}
+
+nav .logo {
+
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 600;
+    counter-reset: #fff;
+
+}
+
+nav .logo span {
+
+    color: #474747;
+
+}
+
+nav .logo img {
+
+    width: 80px;
+    margin-right: 10px;
+
+}
+
+nav ul li {
+
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+nav ul li a {
+
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+
+}
+
+nav:hover {
+
+    background: #fff;
+
+}
+
+nav:hover .logo {
+
+    color: #333;
+
+}
+
+nav:hover ul li a {
+
+    color: #333;
+
+}
+
+.content {
+
+    margin-top: 9%;
+    margin-left: 3%;
+    color: #fff;
+
+}
+
+.content h1 {
+
+    font-size: 120px;
+    line-height: 140px;
+    font-weight: 600;
+
+}
+
+.content h3 {
+
+    max-width: 500px;
+    line-height: 28px;
+    opacity: 0;
+
+}
+
+.links {
+
+    margin-top: 30px;
+    opacity: 0;
+
+}
+
+.links a {
+
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+.btn {
+
+    border: 2px solid #fff;
+    padding: 10px 35px;
+    border-radius: 30px;
+    margin-right: 15px;
+
+}
+
+.slide-left {
+
+    animation: slideleft 1s linear forwards;
+
+}
+
+@keyframes slideleft {
+
+    0% {
+        transform: translate(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(100px);
+        opacity: 1;
+    }
+
+}
+
+h3.slide-lef {
+
+    animation-delay: 1s;
+
+}
+
+.links.slide-lef {
+
+    animation-delay: 2s;
+
+}
+
+.part2 {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(11, 107, 136, 0.5)), url(../img/Capturar4.PNG);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.col-1 {
+
+    border: solid #000000 10px;
+    flex-basis: 43%;
+    flex-grow: 1;
+    background-image: linear-gradient(rgba(10, 10, 10, 0.5), rgba(0, 0, 0, 0.5)), url(../img/tela1.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.col-2 {
+
+    flex-basis: 57%;
+    flex-grow: 1;
+
+}
+
+.txt {
+
+    width: 70%;
+    height: 90;
+    margin-top: 160px;
+    margin: 180px auto 0;
+    cursor: pointer;
+    animation: slideleft 1s linear forwards;
+
+}
+
+.txt h2 {
+
+    font-family: monospace;
+    color: #0F5959;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 30px;
+
+
+}
+
+.txt p {
+
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #fff;
+
+
+}
+
+.txt a {
+
+    text-decoration: none;
+    display: inline-block;
+    background: #0A3A40;
+    color: #000000;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 15px 50px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+
+
+}
+
+/* barra de rolagem */
+
+::-webkit-scrollbar {
+
+    width: 15px;
+    
+}
+
+::-webkit-scrollbar-track {
+
+    background: #333;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: linear-gradient(#0A3A40, #1D7373);
+    border-radius: 10px;
+
+    
+}
